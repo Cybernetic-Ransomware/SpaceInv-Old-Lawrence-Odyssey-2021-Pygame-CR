@@ -1,0 +1,15 @@
+Tutorial made by <a href="https://youtu.be/FfWpgLFMI7w>Pygame Tutorial for Beginners - Python Game Development Course</a>
+
+Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+
+Icons made by <a href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+
+Font by <a href="https://www.1001freefonts.com/karmatic-arcade.font>Vic Fieger</a>
+
+Background by <a href="https://pixabay.com/pl/users/geralt-9301">geralt</a>
+
+Wilhelm scream from <a href="https://commons.wikimedia.org/wiki/File:Wilhelm_Scream.ogg>Wikicommons"</a>
+
+Lock & Load - <a href="https://samplefocus.com/samples/lock-load-silencer-gun-shot>Silencer Gun Shot by Matheus Dian"</a>
+
+Bacground music by <div class="attribution-block"><a href="http://dig.ccmixter.org/files/Jasper/32151">Wobbly Bass5</a> by jasper (c) copyright 2011 Licensed under a Creative Commons <a href="http://creativecommons.org/licenses/by-nc/3.0/">Attribution Noncommercial  (3.0)</a> license. </div>
