@@ -69,30 +69,37 @@ torpedo_state = 'ready'
 torpedoY_change = 0.05
 torpedoY_inc = 0.002 / dif_lvl**2
 
+
 def show_score(x, y):
     score = font.render('Your score: ' + str(score_val), True, (253, 66, 62))
     screen.blit(score, (x, y))
+
 
 def game_over_text():
     over_text = over_font.render('GAME OVER', True, (253, 66, 62))
     screen.blit(over_text, (130, 250))
     screen.blit(devilDoggy, (240, 450))
 
+
 def player(x, y):
     screen.blit(playerImg, (x, y))
 
+
 def enemy(x, y, i):
     screen.blit(enemyImg[i], (x, y))
+
 
 def fire_torpedo(x, y):
     global torpedo_state
     torpedo_state = 'overload'
     screen.blit(torpedoImg, (x, y))
 
-def aimedHit(enemyX, enemyY, torpedoX, torpedoY):
+
+def aimed_hit(enemyX, enemyY, torpedoX, torpedoY):
     distance = math.sqrt(((enemyX - torpedoX)**2) + ((enemyY - torpedoY)**2))
     if distance < 27:
         return True
+
 
 # main dish
 running = True
@@ -100,7 +107,7 @@ while running:
 
     # update  bacground color RGB
     screen.fill((14, 42, 112))
-    screen.blit(background, (0,0))
+    screen.blit(background, (0, 0))
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -143,11 +150,11 @@ while running:
         playerX = 800 - 64
 
     # next enemy move
-    for i in range (num_of_enemies):
+    for i in range(num_of_enemies):
 
         # Game Over
         if enemyY[i] > 420:
-            for j in range (num_of_enemies):
+            for j in range(num_of_enemies):
                 enemyY[j] = 2000
             game_over_text()
             break
@@ -161,7 +168,7 @@ while running:
             enemyY[i] += enemyY_change[i]
 
         # hit shoot!
-        if aimedHit(enemyX[i], enemyY[i], torpedoX, torpedoY):
+        if aimed_hit(enemyX[i], enemyY[i], torpedoX, torpedoY):
             wilhelm_Sound = mixer.Sound('ambient\\Wilhelm_Scream.ogg')
             wilhelm_Sound.play()
             torpedoY = playerY - 16 - 2
@@ -180,4 +187,3 @@ while running:
     # update screen inside loop
     show_score(textX, textY)
     pygame.display.update()
-
