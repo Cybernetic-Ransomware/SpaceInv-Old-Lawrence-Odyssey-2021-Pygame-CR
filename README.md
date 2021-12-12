@@ -4,3 +4,4 @@ Simple game in PyCharm by using CC materials and freeCodeCamp tutorial
 gameplay: https://youtu.be/qmJdEjwjH1A
 
 Python 3.9.0
+Pygame 2.0.1
